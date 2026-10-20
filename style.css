@@ -1,0 +1,253 @@
+/* ==========================================================================
+   External Stylesheet: style.css
+   Project: Wanderlust Travel Agency - Booking Form
+   Demonstrates Element, Class, ID, and Attribute Selectors
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. CSS ELEMENT SELECTOR DEMONSTRATIONS
+   -------------------------------------------------------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #2d3748;
+    line-height: 1.6;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #2d3748;
+    font-size: 14px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    border: 1px solid #cbd5e0;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 14px;
+    resize: vertical;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+select {
+    width: 100%;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    border: 1px solid #cbd5e0;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #ffffff;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* --------------------------------------------------------------------------
+   2. CSS CLASS SELECTOR DEMONSTRATIONS
+   -------------------------------------------------------------------------- */
+.site-header {
+    background-color: #0f4c81;
+    color: #ffffff;
+    padding: 24px 20px;
+    text-align: center;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+.site-header p {
+    margin: 6px 0 0;
+    color: #d9e8f5;
+    font-size: 15px;
+}
+
+.main-navigation {
+    background-color: #1a365d;
+    padding: 12px 20px;
+    text-align: center;
+}
+
+.main-navigation a {
+    color: #cbd5e0;
+    text-decoration: none;
+    margin: 0 16px;
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.2s;
+}
+
+/* Hover Feedback on Links */
+.main-navigation a:hover {
+    color: #ffffff;
+}
+
+.active-nav-link {
+    color: #ffffff !important;
+    font-weight: bold;
+    border-bottom: 2px solid #38b2ac;
+    padding-bottom: 3px;
+}
+
+.page-container {
+    max-width: 820px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+.form-group {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.form-group legend {
+    font-weight: bold;
+    font-size: 16px;
+    color: #0f4c81;
+    padding: 0 10px;
+}
+
+.input-row {
+    margin-bottom: 18px;
+}
+
+.selection-group-label {
+    display: block;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inline-option {
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.inline-option input {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.required-star {
+    color: #e53e3e;
+}
+
+.field-hint {
+    display: block;
+    font-size: 12px;
+    color: #718096;
+    margin-top: 4px;
+}
+
+.button-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.site-footer {
+    background-color: #0f4c81;
+    color: #e2e8f0;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    margin-top: 45px;
+}
+
+.site-footer p {
+    margin: 4px 0;
+}
+
+/* --------------------------------------------------------------------------
+   3. CSS ID SELECTOR DEMONSTRATIONS
+   -------------------------------------------------------------------------- */
+#booking-form {
+    background: transparent;
+}
+
+#submit-btn {
+    background-color: #0f4c81;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s ease, transform 0.1s ease;
+}
+
+/* Hover Feedback on Submit Button */
+#submit-btn:hover {
+    background-color: #1a365d;
+    transform: translateY(-1px);
+}
+
+#reset-btn {
+    background-color: #edf2f7;
+    color: #4a5568;
+    border: 1px solid #cbd5e0;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+/* Hover Feedback on Reset Button */
+#reset-btn:hover {
+    background-color: #e2e8f0;
+    color: #1a202c;
+}
+
+/* --------------------------------------------------------------------------
+   4. CSS ATTRIBUTE SELECTOR DEMONSTRATIONS
+   -------------------------------------------------------------------------- */
+/* Style specific inputs by their exact type */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    border: 1px solid #cbd5e0;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Interactive Focus Feedback on Form Inputs */
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0f4c81;
+    box-shadow: 0 0 0 3px rgba(15, 76, 129, 0.18);
+    background-color: #ffffff;
+}

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Travels - Packages & Media</title>
+
+    <style>
+        /* =========================================================
+           Embedded Stylesheet for information.html
+           Demonstrates Element, Class, ID, and Attribute Selectors
+           ========================================================= */
+
+        /* 1. CSS Element Selector: Base body typography and background */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #2d3748;
+            line-height: 1.6;
+        }
+
+        /* 1. CSS Element Selector: Headings style */
+        h1, h2, h3 {
+            color: #0f4c81;
+        }
+
+        header {
+            background-color: #0f4c81;
+            color: #ffffff;
+            padding: 22px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #ffffff;
+            margin: 0;
+            font-size: 28px;
+        }
+
+        nav {
+            background-color: #1a365d;
+            padding: 12px 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #cbd5e0;
+            text-decoration: none;
+            margin: 0 16px;
+            font-weight: 500;
+            font-size: 15px;
+        }
+
+        nav a.active-link {
+            color: #ffffff;
+            font-weight: bold;
+            border-bottom: 2px solid #38b2ac;
+            padding-bottom: 3px;
+        }
+
+        main {
+            max-width: 950px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* 2. CSS Class Selector: Card style for containers */
+        .info-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 28px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+        }
+
+        /* 2. CSS Class Selector: Sidebar travel notice */
+        .travel-notice {
+            background-color: #e6fffa;
+            border-left: 5px solid #319795;
+            padding: 18px 20px;
+            margin-bottom: 28px;
+            border-radius: 4px;
+        }
+
+        /* 3. CSS ID Selector: Main pricing table styling */
+        #packages-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 16px;
+            margin-bottom: 10px;
+        }
+
+        #packages-table caption {
+            font-size: 16px;
+            font-weight: 600;
+            color: #4a5568;
+            padding-bottom: 10px;
+            text-align: left;
+        }
+
+        /* 4. CSS Attribute Selector: Target table headers using [scope="col"] */
+        th[scope="col"] {
+            background-color: #0f4c81;
+            color: #ffffff;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 13px;
+            letter-spacing: 0.5px;
+        }
+
+        #packages-table th, 
+        #packages-table td {
+            border: 1px solid #cbd5e0;
+            padding: 12px 14px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        #packages-table tr:nth-child(even) {
+            background-color: #f7fafc;
+        }
+
+        .media-player-box {
+            margin-top: 18px;
+            margin-bottom: 24px;
+        }
+
+        /* 4. CSS Attribute Selector: Target multimedia players with [controls] */
+        audio[controls],
+        video[controls] {
+            width: 100%;
+            max-width: 650px;
+            border-radius: 6px;
+            display: block;
+        }
+
+        footer {
+            background-color: #0f4c81;
+            color: #e2e8f0;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Tour Packages & Media Highlights</h1>
+        <p style="margin: 5px 0 0; color: #d9e8f5;">Detailed schedules, pricing breakdown, and virtual multimedia tours</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="information.html" class="active-link">Packages & Media</a>
+        <a href="registration.html">Book a Tour</a>
+    </nav>
+
+    <main>
+        
+        <!-- Semantic Article: Featured Expedition Description -->
+        <article class="info-card">
+            <h2>Featured Expedition: 7-Day Northern Wonderland Tour</h2>
+            <p>
+                Our signature 7-day tour takes travelers deep into the heart of Gilgit-Baltistan. The journey begins with a scenic drive through the Karakoram Highway, followed by stopovers at Rakaposhi View Point, the historical Altit and Baltit Forts, and the serene turquoise waters of Attabad Lake.
+            </p>
+            <p>
+                All transport is handled in climate-controlled 4x4 off-road vehicles with certified mountain drivers. Travelers receive daily buffet breakfasts, professional photography services, and bonfires at night under starlit mountain skies.
+            </p>
+        </article>
+
+        <!-- Semantic Aside: Useful Tips / Advisory -->
+        <aside class="travel-notice">
+            <h3 style="margin-top: 0; color: #234e52;">Travel Advisory & Packing Tip</h3>
+            <p style="margin-bottom: 0; font-size: 14.5px; color: #285e61;">
+                Weather in the northern regions fluctuates rapidly between day and night. We strongly suggest carrying a windbreaker jacket, comfortable waterproof trekking boots, sunscreen, and essential personal medicines. National ID cards (CNIC/Passport) are mandatory at security checkpoints.
+            </p>
+        </aside>
+
+        <!-- Structured Data Table Section with Heading -->
+        <section class="info-card">
+            <h2>Available Tour Packages & Pricing</h2>
+            <table id="packages-table">
+                <caption>Available Summer & Autumn Tour Packages (2026 Season)</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Package Name</th>
+                        <th scope="col">Destination</th>
+                        <th scope="col">Duration</th>
+                        <th scope="col">Standard Price</th>
+                        <th scope="col">Key Inclusions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Northern Escape</td>
+                        <td>Hunza Valley & Nagar</td>
+                        <td>5 Days, 4 Nights</td>
+                        <td>PKR 55,000</td>
+                        <td>Hotel, Coaster Transport, Breakfast</td>
+                    </tr>
+                    <tr>
+                        <td>Alpine Discovery</td>
+                        <td>Skardu & Shigar</td>
+                        <td>7 Days, 6 Nights</td>
+                        <td>PKR 78,000</td>
+                        <td>4x4 Prado, 3-Star Stay, Tour Guide</td>
+                    </tr>
+                    <tr>
+                        <td>Valley of Swat</td>
+                        <td>Swat & Malam Jabba</td>
+                        <td>3 Days, 2 Nights</td>
+                        <td>PKR 35,000</td>
+                        <td>Luxury Van, Resort Stay, Chairlift Pass</td>
+                    </tr>
+                    <tr>
+                        <td>Wilderness Camp</td>
+                        <td>Kumrat & Jahaz Banda</td>
+                        <td>4 Days, 3 Nights</td>
+                        <td>PKR 42,000</td>
+                        <td>Jeep Safari, Camping Gear, Meals</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Multimedia Section -->
+        <section class="info-card">
+            <h2>Multimedia Tour Previews</h2>
+            <p>Listen to our travel audio guide and watch a brief glimpse of our Skardu summer expedition.</p>
+
+            <!-- Audio Clip with Playback Controls and Fallback -->
+            <div class="media-player-box">
+                <h3>1. Audio Briefing: Mountain Safety & Travel Etiquette</h3>
+                <audio controls>
+                    <source src="media/travel-guide.mp3" type="audio/mpeg">
+                    <source src="media/travel-guide.ogg" type="audio/ogg">
+                    Your browser does not support the audio element. You can download the audio file directly from our media folder.
+                </audio>
+            </div>
+
+            <!-- Video Clip with Playback Controls and Fallback -->
+            <div class="media-player-box">
+                <h3>2. Video Clip: Glimpse of the Karakoram Highway</h3>
+                <video controls width="640" height="360" poster="media/hero-travel.jpg">
+                    <source src="media/destination-tour.mp4" type="video/mp4">
+                    <source src="media/destination-tour.webm" type="video/webm">
+                    Your browser does not support the video tag. Please update your browser to watch the tour overview.
+                </video>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p style="margin: 0 0 5px;">&copy; 2026 Wanderlust Travel Agency. All rights reserved.</p>
+        <p style="margin: 0; color: #cbd5e0;">Helpline: +92 300 1234567 | Email: info@wanderlusttravels.com</p>
+    </footer>
+
+</body>
+</html>

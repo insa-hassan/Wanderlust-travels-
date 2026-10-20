@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Travels | Tour Booking Request</title>
+    <!-- External CSS Stylesheet Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="site-header">
+        <h1>Tour Booking & Passenger Registration</h1>
+        <p>Complete the form below to confirm your customized travel itinerary</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="main-navigation">
+        <a href="index.html">Home</a>
+        <a href="information.html">Packages & Media</a>
+        <a href="registration.html" class="active-nav-link">Book a Tour</a>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="page-container">
+        
+        <form id="booking-form" action="#" method="post">
+            
+            <!-- Fieldset 1: Account & Personal Credentials -->
+            <fieldset class="form-group">
+                <legend>Passenger Account Details</legend>
+                
+                <div class="input-row">
+                    <label for="full-name">Full Legal Name <span class="required-star">*</span></label>
+                    <input type="text" id="full-name" name="full_name" placeholder="e.g. Insa Hassan" required>
+                </div>
+
+                <div class="input-row">
+                    <label for="user-email">Email Address <span class="required-star">*</span></label>
+                    <input type="email" id="user-email" name="user_email" placeholder="example@domain.com" required>
+                </div>
+
+                <div class="input-row">
+                    <label for="account-password">Portal Access Password <span class="required-star">*</span></label>
+                    <input type="password" id="account-password" name="account_password" minlength="8" placeholder="Minimum 8 characters" required>
+                    <small class="field-hint">Must be at least 8 characters long for client portal login.</small>
+                </div>
+
+                <div class="input-row">
+                    <label for="traveler-age">Primary Traveler Age <span class="required-star">*</span></label>
+                    <input type="number" id="traveler-age" name="traveler_age" min="18" max="90" placeholder="18 - 90" required>
+                </div>
+            </fieldset>
+
+            <!-- Fieldset 2: Trip & Destination Preferences -->
+            <fieldset class="form-group">
+                <legend>Trip Specifications & Preferences</legend>
+
+                <div class="input-row">
+                    <label for="departure-date">Preferred Departure Date <span class="required-star">*</span></label>
+                    <input type="date" id="departure-date" name="departure_date" required>
+                </div>
+
+                <div class="input-row">
+                    <label for="destination-select">Destination Package <span class="required-star">*</span></label>
+                    <select id="destination-select" name="destination_package" required>
+                        <option value="" disabled selected>-- Select a Destination Package --</option>
+                        <option value="hunza">Hunza Valley & Attabad Lake (5 Days)</option>
+                        <option value="skardu">Skardu & Deosai Plains (7 Days)</option>
+                        <option value="swat">Swat Valley & Malam Jabba (3 Days)</option>
+                        <option value="kumrat">Kumrat Valley & Jahaz Banda (4 Days)</option>
+                    </select>
+                </div>
+
+                <!-- Radio Button Group (Single Selection Only) -->
+                <div class="input-row">
+                    <span class="selection-group-label">Travel Group Tier:</span>
+                    <div class="options-container">
+                        <label class="inline-option">
+                            <input type="radio" id="tier-standard" name="tour_tier" value="standard" checked>
+                            Standard Group Tour
+                        </label>
+                        <label class="inline-option">
+                            <input type="radio" id="tier-luxury" name="tour_tier" value="luxury">
+                            Private VIP Luxury Tour
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Checkboxes (Multiple Independent Selections) -->
+                <div class="input-row">
+                    <span class="selection-group-label">Add-on Services (Optional):</span>
+                    <div class="options-container">
+                        <label class="inline-option">
+                            <input type="checkbox" id="addon-insurance" name="addons" value="travel_insurance">
+                            Comprehensive Travel Insurance
+                        </label>
+                        <label class="inline-option">
+                            <input type="checkbox" id="addon-pickup" name="addons" value="airport_pickup">
+                            Airport Pick & Drop Service
+                        </label>
+                        <label class="inline-option">
+                            <input type="checkbox" id="addon-guide" name="addons" value="private_guide">
+                            Dedicated Local English/Urdu Guide
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Textarea with Maxlength -->
+                <div class="input-row">
+                    <label for="special-requests">Special Dietary or Medical Requests</label>
+                    <textarea id="special-requests" name="special_requests" rows="4" maxlength="250" placeholder="Mention any food allergies, hotel room preferences, or mobility needs (Max 250 characters)..."></textarea>
+                </div>
+            </fieldset>
+
+            <!-- Form Action Buttons -->
+            <div class="button-container">
+                <input type="submit" id="submit-btn" value="Confirm & Submit Booking">
+                <input type="reset" id="reset-btn" value="Reset Details">
+            </div>
+
+        </form>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 Wanderlust Travel Agency. All rights reserved.</p>
+        <p>Customer Support Desk: support@wanderlusttravels.com | +92 300 1234567</p>
+    </footer>
+
+</body>
+</html>
